@@ -67,10 +67,9 @@ body {
   }
 }
 /* Desktop styles & > */
-@media only screen and (min-width: 1158) {
+@media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    display: block;
   }
 }
 
@@ -215,6 +214,7 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-left: auto;
 }
 
 .address-item.link {
@@ -333,7 +333,6 @@ body {
 @media only screen and (max-width: 767px) {
   .features-item {
     width: 100%;
-    width: calc((100% - 72px) / 1);
   }
 }
 .menu-icon {
@@ -369,12 +368,6 @@ body {
   }
   .description-text.text {
     font-weight: 500;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .features-item {
-    width: 264px;
   }
 }
 
@@ -658,7 +651,8 @@ body {
 
 @media only screen and (max-width: 767px) {
   .modal {
-    width: 392px;
+    max-width: 392px;
+    width: 90%;
     padding-left: 16px;
     padding-right: 16px;
   }
