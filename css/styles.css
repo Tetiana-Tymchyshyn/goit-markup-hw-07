@@ -83,6 +83,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-grey);
 }
+
 .description-text {
   text-decoration: none;
   font-size: 16px;
@@ -360,15 +361,14 @@ body {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .subtitle-description {
+  .subtitle-description.title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     text-transform: capitalize;
   }
-  .description-text {
+  .description-text.text {
     font-weight: 500;
-    align-self: stretch;
   }
 }
 
