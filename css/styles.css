@@ -445,7 +445,7 @@ body {
     margin-bottom: 72px;
   }
   .section-team {
-    padding: 96px 0;
+    padding: 96px auto;
   }
 }
 
@@ -457,7 +457,7 @@ body {
     margin-right: auto;
   }
   .section-team {
-    padding: 96px 0;
+    padding: 96px auto;
   }
   .team-list:nth-last-child(-n + 2) {
     margin-bottom: 64px;
@@ -532,13 +532,22 @@ body {
   .costomers-list {
     gap: 16px;
   }
+  .customers {
+    padding-top: 74px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 96px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .costomer-item {
     width: calc((100% - 120px) / 3);
-    height: 88px;
   }
+  .customers {
+    padding: 96px auto;
+  }
+
 }
 
 /* Footer*/
