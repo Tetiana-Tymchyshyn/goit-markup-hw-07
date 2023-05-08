@@ -95,7 +95,6 @@ body {
 /* HEADER */
 .top-header {
   padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--color-cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -226,8 +225,6 @@ body {
   .address {
     display: block;
     gap: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.04em;
@@ -334,6 +331,12 @@ body {
   .features-item {
     width: 100%;
   }
+  .subtitle-description.title {
+    text-align: center;
+  }
+  .description-text.text {
+    width: 396px;
+  }
 }
 .menu-icon {
   display: flex;
@@ -373,8 +376,8 @@ body {
 
 .section-about {
   padding-bottom: 120px;
-  display: none;
 }
+
 .about {
   margin-bottom: 72px;
   font-weight: 700;
@@ -393,12 +396,20 @@ body {
 .list-about {
   width: calc((100% - 48px) / 3);
 }
+
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
+  .section-about {
+    display: none;
+  }
+}
+
 /* TEAM */
 .section-team {
   padding: 120px 0;
-  gap: 24px;
+  /* gap: 24px; */
   background-color: var(--color-cloud);
 }
+
 .team-items {
   border-top: none;
   border: 1px solid var(--color-cloud);
@@ -419,6 +430,38 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .items {
+    width: 100%;
+  }
+  .team-list:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .section-team {
+    padding: 96px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .items {
+    width: 264px;
+    width: calc((100% - 72px) / 2);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-team {
+    padding: 96px 0;
+  }
+  .team-list:nth-last-child(-n + 2) {
+    margin-bottom: 64px;
+  }
 }
 .social-list-link {
   display: flex;
@@ -481,6 +524,21 @@ body {
 
 .customers {
   padding: 120px 0;
+}
+@media only screen and (max-width: 767px) {
+  .costomer-item {
+    width: calc((100% - 120px) / 2);
+  }
+  .costomers-list {
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .costomer-item {
+    width: calc((100% - 120px) / 3);
+    height: 88px;
+  }
 }
 
 /* Footer*/
@@ -622,6 +680,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: scroll;
   background-color: rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: opacity var(--transition-duration-and-func),
@@ -636,9 +695,9 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0%) scale(1);
   transition: transform var(--transition-duration-and-func);
   width: 408px;
   min-height: 576px;
