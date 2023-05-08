@@ -92,9 +92,16 @@ body {
   margin-bottom: 8px;
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 /* HEADER */
 .top-header {
   padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--color-cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -224,16 +231,9 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .address {
     display: block;
-    gap: 0;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.04em;
-  }
-  .description-text.address-item {
-    margin-bottom: 12px;
-  }
-  .description-text.contact-item {
-    margin-bottom: 0;
   }
 }
 
@@ -324,6 +324,7 @@ body {
   gap: 72px 24px;
 }
 .features-item {
+  width: 264px;
   width: calc((100% - 72px) / 4);
 }
 
@@ -335,7 +336,7 @@ body {
     text-align: center;
   }
   .description-text.text {
-    width: 396px;
+    width: 356px;
   }
 }
 .menu-icon {
@@ -406,7 +407,6 @@ body {
 /* TEAM */
 .section-team {
   padding: 120px 0;
-  /* gap: 24px; */
   background-color: var(--color-cloud);
 }
 
@@ -431,18 +431,13 @@ body {
   flex-wrap: wrap;
   gap: 24px;
 }
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
 
 @media only screen and (max-width: 767px) {
   .items {
-    width: 100%;
+    width: calc((100% - 72px) / 1);
   }
   .team-list:not(:last-child) {
-    margin-bottom: 72px;
+    gap: 72px;
   }
   .section-team {
     padding: 96px auto;
@@ -451,16 +446,14 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .items {
-    width: 264px;
+    max-width: 328px;
     width: calc((100% - 72px) / 2);
-    margin-left: auto;
-    margin-right: auto;
   }
   .section-team {
     padding: 96px auto;
   }
   .team-list:nth-last-child(-n + 2) {
-    margin-bottom: 64px;
+    gap: 64px;
   }
 }
 .social-list-link {
@@ -526,17 +519,16 @@ body {
   padding: 120px 0;
 }
 @media only screen and (max-width: 767px) {
-  .costomer-item {
-    width: calc((100% - 120px) / 2);
-  }
   .costomers-list {
     gap: 16px;
   }
   .customers {
-    padding-top: 74px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 96px;
+  }
+  .costomer-item {
+    width: calc((100% - 120px) / 2);
   }
 }
 
@@ -547,7 +539,6 @@ body {
   .customers {
     padding: 96px auto;
   }
-
 }
 
 /* Footer*/
