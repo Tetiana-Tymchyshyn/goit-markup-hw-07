@@ -644,7 +644,7 @@ body {
 
 .modal-form-footer {
   display: flex;
-  width: 453px;
+  gap: 24px;
 }
 
 .modal-form-input-footer {
@@ -697,6 +697,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .page-footer {
+    gap: 72px 24px;
+  }
   .footer-text {
     max-width: 268px;
   }
@@ -705,24 +708,29 @@ body {
     padding-bottom: 96px;
   }
   .page-footer-logo {
-    margin-bottom: 72px;
-    }
-  .page-social-offers {
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-bottom: 72px;
-  }
-  .modal-form-footer {
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  .modal-form-submit-footer {
-    margin-top: 16px;
+
+  .modal-form-footer {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modal-form-footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .page-footer {
     width: 584px;
+    gap: 72px 24px;
   }
   .main-footer {
     padding-top: 96px;
@@ -737,6 +745,7 @@ body {
   .modal-form-footer-container {
     margin-top: 72px;
   }
+ 
 }
 
 /* MODAL WINDOW */
