@@ -29,6 +29,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -253,11 +255,72 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--color-navy-blue);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 428px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_mob@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 428px),
+  (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 428px),
+  (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 428px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 429px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tabl@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 429px) and (max-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 429px) and (max-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 429px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tabl@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office\ 1_lapt@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 769px),
+  (min-resolution: 192dpi) and (min-width: 769px),
+  (min-resolution: 2dppx) and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office\ 1_lapt@2x.png);
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1157px) {
@@ -697,11 +760,14 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .logo-footer {
+    text-align: center;
+  }
   .page-footer {
     gap: 72px 24px;
   }
   .footer-text {
-    max-width: 268px;
+    width: 268px;
   }
   .main-footer {
     padding-top: 96px;
@@ -712,8 +778,21 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .page-social-offers {
+    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-social-text {
+    text-align: center;
   }
 
+  .modal-footer-text {
+    text-align: center;
+  }
   .modal-form-footer {
     gap: 16px;
     flex-wrap: wrap;
@@ -723,7 +802,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: auto;
+  }
+  .modal-form-submit-footer {
+    margin-left: 0;
   }
 }
 
@@ -742,10 +823,9 @@ body {
   .page-social-offers {
     margin-right: 0;
   }
-  .modal-form-footer-container {
-    margin-top: 72px;
+  .modal-form-input-footer {
+    width: 264px;
   }
- 
 }
 
 /* MODAL WINDOW */
