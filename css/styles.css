@@ -268,8 +268,8 @@ body {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 428px),
-screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 428px),
-screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 428px) {
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 428px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 428px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -290,8 +290,8 @@ screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 428px)
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 429px) and (max-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 429px) and (max-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 429px) and (max-width: 768px) {
+  screen and (min-resolution: 192dpi) and (min-width: 429px) and (max-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 429px) and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -307,19 +307,19 @@ screen and (min-resolution: 2dppx) and (min-width: 429px) and (max-width: 768px)
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/people-office\ 1_lapt@1x.jpg);
+      url(../images/hero/people-office1_lapt@1x.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
-screen and (min-resolution: 192dpi) and (min-width: 769px),
-screen and (min-resolution: 2dppx) and (min-width: 769px) {
+  screen and (min-resolution: 192dpi) and (min-width: 769px),
+  screen and (min-resolution: 2dppx) and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/people-office\ 1_lapt@2x.png);
+      url(../images/hero/people-office1_lapt@2x.jpg);
   }
 }
 
@@ -532,7 +532,7 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 
 @media only screen and (max-width: 767px) {
   .items {
-    width: 284px;
+    width: 264px;
   }
   .section-team {
     padding: 96px 0;
